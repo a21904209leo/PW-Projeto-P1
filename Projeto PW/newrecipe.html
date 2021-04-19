@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="ULHT">
+        <meta name="keywords" content="Receita vegetariana">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Site de Receitas vegetarianas">
+        <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico"/>
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <title>Vegetami</title>
+    </head>
+    <body>
+        <header>
+            <figure>
+                <img id="logo" src="images/logo.png"><br>
+            </figure>
+        </header>
+        <nav>
+            <ul id="navbar">
+                <li><a href="pratosprincipais.html">Pratos Principais</a></li>
+                <li><a href="entradas.html">Entradas</a></li>
+                <li><a href="sopas.html">Sopas</a></li>
+                <li><a href="sobremesas.html">Sobremesas</a></li>
+                <li><a href="about.html">Sobre nós</a></li>
+                <li class="active">Nova Receita</li>
+              </ul>
+        </nav>
+        <main>
+            <section class="pagemain">
+                <form method="post" action="mailto:nome.apelido@gmail.com">
+                    <section>
+                        <fieldset>
+                            <legend>Dados pessoais:</legend>
+                            <p><label for="nome">Nome: </label><input type="text" id="nome" name="nome" autofocus></p>
+                            <p><label for="apelido">Apelido: </label><input type="text" id="apelido" name="apelido"></p>
+                            <p><label for="email">Email: </label><input type="email" id="email" name="email" autocomplete="on"></p>
+                        </fieldset>
+                    </section>
+                    <section>
+                        <fieldset>
+                            <legend>Nova Receita:</legend>
+                            <p><label for="nomerecipe">Nome da receita: </label><input type="text" id="nomerecipe" name="nomerecipe" required autofocus></p>
+                            <p><label for="doses">Doses: </label><input type="number" id="doses" name="doses" required></p>
+                            <p><label for="duracaohoras">Duração: <input type="number" id="duracaohoras" name="duracaohoras" required>h</label>
+                            <label for="duracaomin"><input type="number" id="duracaomin" name="duracaomin" required>min</label></p>
+
+                            <p><label for="ingredientes">Ingredientes:<br></label><textarea id="ingredientes" name="ingredientes" rows="10" cols="30"></textarea></p>
+                            <p><label for="preparacao">Preparação:<br></label><textarea id="preparacao" name="preparacao" rows="20" cols="50"></textarea></p>
+                        </fieldset>
+                    </section>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>
+                &#127760; Universidade Lusófona de Humanidades e tecnologias - Programação Web &#127760;
+            </p>
+        </footer>
+    </body>
+</html>
